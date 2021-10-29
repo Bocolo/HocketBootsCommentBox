@@ -1,0 +1,385 @@
+ 
+ 
+<!-- THE COMMENT FORM IM ACTUALLY USING -->
+  <br>
+  <div class="card news-member">
+      <div class="card-body">
+          <div class="row pb-2 pt-2">
+              <div  class="col col-12 offset-md-2  offset-xl-2 offset-xxl-3 ">
+                  <label for="handle">Enter your Handle<br>
+                  </label>
+              </div>
+          </div>
+          
+          <div  class="row ">
+              <div class="col-12 col-sm-6 col-md-4 offset-md-2 col-xl-3 offset-xl-2 col-xxl-2 offset-xxl-3">
+                  <!-- offset for if i choose to justify center -->
+                  <div class="input-group ">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input  class="form-control" id="handle" name="handle" type="text"placeholder="HockeyMadness"aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+              </div>
+          </div>
+          <div class="row pb-2 pt-2">
+              <div  class="col col-12 offset-md-2  offset-xl-2 offset-xxl-3 ">
+                  <label for="handle">Comment <span style="color: red">*</span><br>
+                  </label>
+              </div>
+          </div>
+          <div  class="row justify-content-center">
+              <div class="col-12 col-md-8 col-xxl-6 ">
+                  <div class="input-group mb-3">
+                      <textarea  class="form-control " placeholder="The Hockey Player's Hockey People" id="comment" name="comment" ></textarea>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col offset-md-2  offset-xl-2 offset-xxl-3">
+                  <input class="btn btn-secondary" onclick="storeInput()" type="button" value="Post Comment">
+                  <button class="btn btn-secondary" onclick="storeInput()" type="button" >This button</button>
+              </div>
+          </div>
+          <br>
+      </div>
+  </div>
+  <br>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- Comment Form -->
+  <section id="comments ">
+    <div class="card ">
+        <div class="card-body ">
+            <h5 class="card-title">Member Comments<hr></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Leave a comment </h6>
+            <!-- <hr> -->
+            <form class="form"  id="myForm" >
+                <div class="container-fluid">
+                    <div class="row">
+                        <div  class="col col-12 ">
+                            <label for="handle">Enter your Handle<br>
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div  class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2">
+                            <div class="input-group  mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input  class="form-control" id="handle" name="handle" type="text"placeholder="HockeyMadness"aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div  class="row">
+                        <div class="col-12 col-md-8 col-xxl-6 ">
+                            <div class="input-group mb-3">
+                                <textarea  class="form-control " placeholder="The Hockey Player's Hockey People" id="comment" name="comment" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn btn-secondary" onclick="storeInput()" type="button" value="Post Comment">
+                    <button class="btn btn-secondary" onclick="storeInput()" type="button" >This button</button>
+                </div>
+               
+                <br> <br>
+                <h6 class="card-subtitle mb-2 text-muted">Comments Section</h6>
+               
+
+                <!-- <div  class="card commentcard">
+                    <div class="card-body">
+                        <p><b>@Monkey  </b></p>
+                        <p  class="card-text comment">This is S*!t is bananas 
+                            This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                            <br> B A N A N A S
+                        </p>
+                        <p class="card-footer text-muted">
+                            posted 10s ago
+                        </p>
+                        <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                        <img class="heart" src="images/heart.svg" alt="small heart">
+                        Like
+                        </button>
+                    </div>
+                </div> -->
+                <!-- <div  class="card commentcard">
+                    <div class="card-body"> -->
+                <div class="container-fluid" id="commentoutput2">
+                </div>
+                <!-- <div id="commentoutput">
+                </div> -->
+                       
+                        <!-- <div  class="row commentbox2 justify-content-center">
+                            <div  class="card  col col-xl-8 col-xxl-6">
+                                <div class=" card-body" id="commentoutput">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="row commentbox2 ">
+                            <div  class="card  col col-xl-9  col-xxl-7">
+                                <div class=" card-body" id="commentoutput2">
+                                   
+                                </div>
+                            </div>
+                        </div> -->
+                    
+                    <!-- </div>
+                </div> -->
+                <!-- <div id="commentoutput"></div> -->
+                  <!-- <div class="card ">
+                    <div class="card-body ">
+                        <div class="container justify-content-center"> -->
+                            <label for="handle">Enter your Handle<br>
+                                <!-- <input  class="form-control" id="handle" name="handle" type="text"placeholder="@HockeyMadness">
+                                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">-->
+                            </label>
+                            <br>
+                            <div class="input-group  handlebox mb-3">
+                                <!-- input-group-sm -->
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input  class="form-control" id="handle" name="handle" type="text"placeholder="HockeyMadness"aria-label="Username" aria-describedby="basic-addon1">
+                                <!-- aria-label="Username" aria-describedby="basic-addon1" ---what are these? see if necessary -->
+                            </div>
+                            <!-- <label for="comment"> -->
+                                <!-- should text area be outside of label? -->  <!-- The Hockey Player's Hockey People -->
+                            <div class="input-group mb-3 commentbox">
+                                <!-- input-group-sm -->
+                                <textarea  class="form-control " placeholder="The Hockey Player's Hockey People" id="comment" name="comment" ></textarea>
+                            </div>
+                            <!-- //rows="4" cols="30" -->
+                            
+                            <input class="btn btn-secondary" onclick="storeInput()" type="button" value="Post Comment">
+                            <button class="btn btn-secondary" onclick="storeInput()" type="button" >This button</button>
+                            
+                            
+                        <!-- </div>
+                    </div>
+                </div> -->
+            </form>
+        </div>
+
+
+<!-- test form -->
+        <!-- <div class="card ">
+            <div class="card-body">
+                        <div class="contianer"> 
+                            <div  class="card row ">
+                                <div class=" col col-md-8 card-body">
+                                    <p><b>@Mtester </b></p>
+                                    <p  class="card-text comment">This is S*!t is bananas
+                                        This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                        <br> B A N A N A S
+                                    </p>
+                                    <p class="card-footer text-muted">
+                                        posted 10s ago
+                                    </p>
+                                    <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                    <img class="heart" src="images/heart.svg" alt="small heart">
+                                    Like
+                                    </button>
+                                </div>
+                            </div>
+                            <div  class="row commentbox2 justify-content-center">
+                                <div  class="card  col col-xl-8 col-xxl-6">
+                                    <div class=" card-body">
+                                        <p><b>@tester2 </b></p>
+                                        <p  class="card-text comment">This is S*!t is bananas
+                                            This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                            <br> B A N A N A S
+                                        </p>
+                                        <p class="card-footer text-muted">
+                                            posted 10s ago
+                                        </p>
+                                        <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                        <img class="heart" src="images/heart.svg" alt="small heart">
+                                        Like
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="row commentbox2 justify-content-center">
+                                <div  class="card  col col-xl-8 col-xxl-6">
+                                    <div class=" card-body">
+                                        <p><b>@tester2 </b></p>
+                                        <p  class="card-text comment">This is S*!t is bananas
+                                            This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                            <br> B A N A N A S
+                                        </p>
+                                        <p class="card-footer text-muted">
+                                            posted 10s ago
+                                        </p>
+                                        <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                        <img class="heart" src="images/heart.svg" alt="small heart">
+                                        Like
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="row commentbox2 ">
+                                <div  class="card  col col-xl-9  col-xxl-7">
+                                   
+                                    <div class=" card-body">
+                                        <p><b>@tester3 </b></p>
+                                        <p  class="card-text comment">This is S*!t is bananas
+                                            This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                            <br> B A N A N A S
+                                        </p>
+                                        <p class="card-footer text-muted">
+                                            posted 10s ago
+                                        </p>
+                                        <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                        <img class="heart" src="images/heart.svg" alt="small heart">
+                                        Like
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="row commentbox2 ">
+                                <div  class="card  col col-xl-9  col-xxl-7">
+                                  
+                                    <div class=" card-body">
+                                        <p><b>@tester3 </b></p>
+                                        <p  class="card-text comment">This is S*!t is bananas
+                                            This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                            <br> B A N A N A S
+                                        </p>
+                                        <p class="card-footer text-muted">
+                                            posted 10s ago
+                                        </p>
+                                        <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                        <img class="heart" src="images/heart.svg" alt="small heart">
+                                        Like
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                            <div id="commentoutput">
+
+                            </div>
+            </div>
+        </div> -->
+       
+    <div id="likecount"></div>
+</section>
+
+<!-- test form -->
+                <!-- <div class="card ">
+                    <div class="card-body">
+                                <div class="contianer"> 
+                                    <div  class="card row ">
+                                        <div class=" col col-md-8 card-body">
+                                            <p><b>@Mtester </b></p>
+                                            <p  class="card-text comment">This is S*!t is bananas
+                                                This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                                <br> B A N A N A S
+                                            </p>
+                                            <p class="card-footer text-muted">
+                                                posted 10s ago
+                                            </p>
+                                            <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                            <img class="heart" src="images/heart.svg" alt="small heart">
+                                            Like
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div  class="row commentbox2 justify-content-center">
+                                        <div  class="card  col col-xl-8 col-xxl-6">
+                                            <div class=" card-body">
+                                                <p><b>@tester2 </b></p>
+                                                <p  class="card-text comment">This is S*!t is bananas
+                                                    This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                                    <br> B A N A N A S
+                                                </p>
+                                                <p class="card-footer text-muted">
+                                                    posted 10s ago
+                                                </p>
+                                                <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                                <img class="heart" src="images/heart.svg" alt="small heart">
+                                                Like
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="row commentbox2 justify-content-center">
+                                        <div  class="card  col col-xl-8 col-xxl-6">
+                                            <div class=" card-body">
+                                                <p><b>@tester2 </b></p>
+                                                <p  class="card-text comment">This is S*!t is bananas
+                                                    This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                                    <br> B A N A N A S
+                                                </p>
+                                                <p class="card-footer text-muted">
+                                                    posted 10s ago
+                                                </p>
+                                                <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                                <img class="heart" src="images/heart.svg" alt="small heart">
+                                                Like
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="row commentbox2 ">
+                                        <div  class="card  col col-xl-9  col-xxl-7">
+                                           
+                                            <div class=" card-body">
+                                                <p><b>@tester3 </b></p>
+                                                <p  class="card-text comment">This is S*!t is bananas
+                                                    This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                                    <br> B A N A N A S
+                                                </p>
+                                                <p class="card-footer text-muted">
+                                                    posted 10s ago
+                                                </p>
+                                                <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                                <img class="heart" src="images/heart.svg" alt="small heart">
+                                                Like
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="row commentbox2 ">
+                                        <div  class="card  col col-xl-9  col-xxl-7">
+                                          
+                                            <div class=" card-body">
+                                                <p><b>@tester3 </b></p>
+                                                <p  class="card-text comment">This is S*!t is bananas
+                                                    This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+                                                    <br> B A N A N A S
+                                                </p>
+                                                <p class="card-footer text-muted">
+                                                    posted 10s ago
+                                                </p>
+                                                <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+                                                <img class="heart" src="images/heart.svg" alt="small heart">
+                                                Like
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                    <div id="commentoutput">
+    
+                                    </div>
+                    </div>
+                </div> -->
+               
