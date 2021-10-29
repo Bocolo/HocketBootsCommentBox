@@ -4,10 +4,11 @@
 var str;
 var str2;
 var totalLikes=0;
+var commentCount=0;
 
 function likeMyPost(){
     totalLikes++;
-    document.getElementById("likecount").innerHTML =totalLikes;
+    // document.getElementById("likecount").innerHTML =totalLikes;
     alert(totalLikes);
 };
 function changeOrder(){
@@ -18,7 +19,7 @@ function changeOrder(){
 //card-tect padding
 function storeInput(){
    //account for empty
-
+    
    // if comment is empty break out of this loop altogether here not belowe
     if( document.getElementById("comment").value ==""){
         alert("You forgot to fill in your comment");
@@ -54,16 +55,23 @@ function storeInput(){
         //      + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 
         //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div>";
 
-        str2+= "<div  class='row commentbox2 '><div  class='card  col col-xl-9  col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
-        " </b></p> <p  class='card-text comment'>"
-             + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 
+        // str2+= "<div  class='row commentbox2 '><div  class='card  col col-xl-9  col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
+        // " </b></p> <p  class='card-text comment'>"
+        //      + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 
+        //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
+
+        str2+="<div  class='row commentbox2 justify-content-center'><div  class='card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8 col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
+        " </b></p> <p  class='card-text comment ps-3'>"
+             + arr[i].comment + "</p><br><p class='card-footer foot text-muted'>" +  time 
             + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
-
-
+            
+ 
        
     }
+    commentCount =arr.length;
     // document.getElementById("commentoutput").innerHTML =str;
     //= obj.comment + "<br>" + obj.handle;
+    document.getElementById("commentCount").innerHTML = commentCount + " Comments";
     document.getElementById("commentoutput2").innerHTML =str2;
     console.log(str);
     document.getElementById("myForm").reset();
@@ -74,7 +82,24 @@ console.log("something something dark side");
        // str +=  arr[i].handle + "<br>"+arr[i].comment + "<br>" +  time + "<br>"+
         // "<button onclick='likeMyPost()' type='button' >Like</button><br>";
 
-
+           // <div  class="row commentbox2 justify-content-center">
+            // <div  class="card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8 col-xxl-7">
+        //         <div class=" card-body">
+        //             <p><b>@tester2 </b></p>
+        //             <p  class="card-text comment">This is S*!t is bananas
+        //                 This is S*!t is bananas This is S*!t is bananasThis is S*!t is bananas
+        //                 <br> B A N A N A S
+        //             </p>
+        //             <p class="card-footer foot text-muted">
+        //                 posted 10s ago
+        //             </p>
+        //             <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' >
+        //             <img class="heart" src="images/heart.svg" alt="small heart">
+        //             Like
+        //             </button>
+        //         </div>
+        //     </div>
+        // </div>
 
 
         // str +=  "<p><b>Handle:</b> " + arr[i].handle + "<br>"
