@@ -8,8 +8,8 @@ var commentCount=0;
 
 function likeMyPost(){
     totalLikes++;
-    // document.getElementById("likecount").innerHTML =totalLikes;
-    alert(totalLikes);
+    document.getElementById("heart-text").innerHTML =totalLikes + " Likes";
+    alert("Comments on this page have a total of " + totalLikes+" likes");
 };
 function changeOrder(){
     

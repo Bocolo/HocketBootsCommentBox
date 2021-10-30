@@ -117,7 +117,43 @@ body {
     fill:purple
 }
 .heart{
-    height:24px;}
+    height:24px;
+}
+.test{
+    position:relative
+}
+.bigger-heart{
+    height:50px;
+    /* position:relative;
+    z-index: -1; */
+}
+.heart-text{
+    /* position:relative; */
+}
+/* .circle {
+    border-radius: 100%;
+    background-color: black;
+    border: .1px solid black;
+  } */
+  .total-likes{
+    position:fixed;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    /* height:40px; */
+    bottom:50px;
+    right:10px  
+  }
+.heart-total{
+    padding:10px;
+    padding-bottom:0px;
+    position:fixed;
+    /* position: -webkit-sticky;
+    position: sticky; */
+    height:50px;
+    bottom:30px;
+    right:10px
+}
+    
 @media screen and (max-width:370px){
     .container.ps-4{
         font-size: .9em;
