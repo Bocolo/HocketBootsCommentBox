@@ -50,21 +50,16 @@ function storeInput(){
         }
 
 
-        // str +=    "<div  class='row commentbox2 justify-content-center'><div  class='card  col col-xl-8 col-xxl-6'><div class=' card-body'><p><b>@" + arr[i].handle + 
-        // " </b></p> <p  class='card-text comment'>"
-        //      + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 
-        //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div>";
-
-        // str2+= "<div  class='row commentbox2 '><div  class='card  col col-xl-9  col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
-        // " </b></p> <p  class='card-text comment'>"
-        //      + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 
+        // str2="<div  class='row commentbox2 justify-content-center'><div  class='card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8 col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
+        // " </b></p> <p  class='card-text comment ps-3'>"
+        //      + arr[i].comment + "</p><br><p class='card-footer foot text-muted'>" +  time 
         //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
-
+            
         str2+="<div  class='row commentbox2 justify-content-center'><div  class='card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8 col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
         " </b></p> <p  class='card-text comment ps-3'>"
              + arr[i].comment + "</p><br><p class='card-footer foot text-muted'>" +  time 
             + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
-            
+        // document.getElementById("commentoutput2").innerHTML +=str2;  
  
        
     }
@@ -79,6 +74,16 @@ function storeInput(){
 };
 
 console.log("something something dark side");
+       // str +=    "<div  class='row commentbox2 justify-content-center'><div  class='card  col col-xl-8 col-xxl-6'><div class=' card-body'><p><b>@" + arr[i].handle + 
+        // " </b></p> <p  class='card-text comment'>"
+        //      + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 
+        //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div>";
+
+        // str2+= "<div  class='row commentbox2 '><div  class='card  col col-xl-9  col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
+        // " </b></p> <p  class='card-text comment'>"
+        //      + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 
+        //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
+
        // str +=  arr[i].handle + "<br>"+arr[i].comment + "<br>" +  time + "<br>"+
         // "<button onclick='likeMyPost()' type='button' >Like</button><br>";
 
