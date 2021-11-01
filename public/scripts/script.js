@@ -1,8 +1,11 @@
+// Change post button style
+// larger box -- similar to 990~ bp - on full screen
+
 
 //  --- ORIGINAL WORKS
-    var arr=[];
+var arr=[];
 var str;
-var str2;
+// var str2;
 var totalLikes=0;
 var commentCount=0;
 
@@ -28,7 +31,6 @@ function storeInput(){
     var obj ={comment: document.getElementById("comment").value.replace(/\n\r?/g, '<br />'),
         handle: document.getElementById("handle").value,
         postdate: Date.now()};
-     //   obj.comment = obj.comment.replace(/\n\r?/g, '<br />');
     arr.push(obj);
     str='';
     str2='';
@@ -48,32 +50,33 @@ function storeInput(){
         if(obj.handle==""){
             obj.handle="Anonymous"
         }
-
-
-        // str2="<div  class='row commentbox2 justify-content-center'><div  class='card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8 col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
-        // " </b></p> <p  class='card-text comment ps-3'>"
-        //      + arr[i].comment + "</p><br><p class='card-footer foot text-muted'>" +  time 
-        //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
-            
-        str2+="<div  class='row commentbox2 justify-content-center'><div  class='card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8 col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
+//  col-xxl-7 - debate resinsertion
+        str+="<div  class='row commentbox2 justify-content-center'><div  class='card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8'><div class=' card-body'><p><b>@" + arr[i].handle + 
         " </b></p> <p  class='card-text comment ps-3'>"
              + arr[i].comment + "</p><br><p class='card-footer foot text-muted'>" +  time 
             + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
-        // document.getElementById("commentoutput2").innerHTML +=str2;  
- 
        
     }
     commentCount =arr.length;
     // document.getElementById("commentoutput").innerHTML =str;
     //= obj.comment + "<br>" + obj.handle;
     document.getElementById("commentCount").innerHTML = commentCount + " Comments";
-    document.getElementById("commentoutput2").innerHTML =str2;
+    document.getElementById("commentoutput").innerHTML =str;
     console.log(str);
     document.getElementById("myForm").reset();
  
 };
 
 console.log("something something dark side");
+
+    
+        // str2="<div  class='row commentbox2 justify-content-center'><div  class='card border-info border-bottom-0 border-end-0 border-start-0 rounded-0 col col-xl-8 col-xxl-7'><div class=' card-body'><p><b>@" + arr[i].handle + 
+        // " </b></p> <p  class='card-text comment ps-3'>"
+        //      + arr[i].comment + "</p><br><p class='card-footer foot text-muted'>" +  time 
+        //     + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
+      
+    
+       // document.getElementById("commentoutput2").innerHTML +=str2;  
        // str +=    "<div  class='row commentbox2 justify-content-center'><div  class='card  col col-xl-8 col-xxl-6'><div class=' card-body'><p><b>@" + arr[i].handle + 
         // " </b></p> <p  class='card-text comment'>"
         //      + arr[i].comment + "</p><p class='card-footer text-muted'>" +  time 

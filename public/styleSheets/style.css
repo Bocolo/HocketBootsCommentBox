@@ -99,11 +99,7 @@ body {
     width:500px;
 
 }
-.commentbox2{
-    /* padding-left: 10px;
-    padding-right:10px; */
 
-}
 
 .handlebox{
     width:200px;
@@ -124,22 +120,12 @@ body {
 }
 .bigger-heart{
     height:50px;
-    /* position:relative;
-    z-index: -1; */
+   
 }
-.heart-text{
-    /* position:relative; */
-}
-/* .circle {
-    border-radius: 100%;
-    background-color: black;
-    border: .1px solid black;
-  } */
+
   .total-likes{
     position:fixed;
-    /* position: -webkit-sticky;
-    position: sticky; */
-    /* height:40px; */
+
     bottom:50px;
     right:10px  
   }
@@ -161,15 +147,7 @@ body {
     .handlebox{
         width:100%;
     }
-    /* .input-group>.form-control{
-        padding: 0.25rem 0.5rem;
-            font-size: .875rem;
-            line-height: 1.5;
-            border-radius: 0.2rem;
-         */
-        /* font-size: 10px; */
-        /* @extend .form-control-sm; scss */
-    /* } */
+
 }
 @media screen and (max-width:900px){
 
@@ -193,13 +171,7 @@ body {
         width:100%;
     }
 }
-.form{
-    /* margin:10px; */
-}
-textarea{
-    /* height: 100px; */
-    /* width: 100px; */
-}
+
 /* .form-control-sm {
   padding: $input-padding-y-sm $input-padding-x-sm;
   font-size: $font-size-sm;
