@@ -1,5 +1,3 @@
-
-
 body {
     font-size: 1em;
     font-family:'Open Sans',Arial, Helvetica, sans-serif;
@@ -29,16 +27,9 @@ body {
 }
 .card-text.comment{
     background-color: transparent;
-    padding:0px;
+  
 }
-/* .card.comment{
-    width:
-} */
-/* #comments{
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-} */
+
 
 .yellow{
     color:rgb(253, 185, 37)
@@ -46,9 +37,7 @@ body {
 .yellow:hover{
     color:rgb(250, 210, 110)
 }
-.time-bg{
-    background-color: rgb(33, 158, 188,.1);
-}
+
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
@@ -71,7 +60,6 @@ body {
 
 .links{
     color: #ff77af;
-  
     text-decoration: none;
     display: inline-block;
     transition: all .2s ease-in-out;
@@ -95,103 +83,6 @@ body {
     color: #ff3e8d;
    
 }
-.commentbox{
-    width:500px;
-
-}
-
-
-.handlebox{
-    width:200px;
-}
-
-.commentcard{
-    width:700px;
-}
-
-.purple{
-    fill:purple
-}
 .heart{
     height:24px;
 }
-.test{
-    position:relative
-}
-.bigger-heart{
-    height:50px;
-   
-}
-
-  .total-likes{
-    position:fixed;
-
-    bottom:50px;
-    right:10px  
-  }
-.heart-total{
-    padding:10px;
-    padding-bottom:0px;
-    position:fixed;
-    /* position: -webkit-sticky;
-    position: sticky; */
-    height:50px;
-    bottom:30px;
-    right:10px
-}
-    
-@media screen and (max-width:370px){
-    .container.ps-4{
-        font-size: .9em;
-    }
-    .handlebox{
-        width:100%;
-    }
-
-}
-@media screen and (max-width:900px){
-
-    .commentbox{
-        width:55%;
-    }
-}
-@media screen and (max-width:750px){
-
-    .commentcard{
-        width:100%;
-    }
-    
-    .commentbox{
-        width:70%;
-    }
-}
-@media screen and (max-width:500px){
-
-    .commentbox{
-        width:100%;
-    }
-}
-
-/* .form-control-sm {
-  padding: $input-padding-y-sm $input-padding-x-sm;
-  font-size: $font-size-sm;
-  line-height: $input-line-height-sm;
-  @include border-radius($input-border-radius-sm);
-}
- */
-
- /* .heart{
-    height:24px;}
-.heart2{
-    height:24px;
-    background-color: red;
-    -webkit-mask: url(images/heart.svg) no-repeat center;
-    mask: url(images/heart.svg) no-repeat center;
-}
-.heart:hover{
-    fill: #C8419F;
-    color: #bc218d;
-} */
-
-
-
