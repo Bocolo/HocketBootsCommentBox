@@ -24,7 +24,13 @@ function storeInput(){
         handle: document.getElementById("handle").value,
         postdate: Date.now()};
     arr.push(obj);
-    str='';
+    //adding toggle functionality - buttom and containing div for toggle section
+    str='<div class="text-center">'
+    +'<button class="btn yellow p-0 pb-3  "data-bs-toggle="collapse" data-bs-target="#comments-show" '
+    +'aria-expanded="true" '+'aria-controls="comments-show">'
+    +'<b>Toggle Comments</b>'
+    +'</button></div> '
+    +'<div  class="show multi-collapse"   id="comments-show">';
     for (var i =arr.length-1; i>=0;i--){
         //format time
         var timedif =(Date.now() -arr[i].postdate)/1000;
@@ -46,6 +52,8 @@ function storeInput(){
              + arr[i].comment + "</p><br><p class='card-footer foot text-muted'>" +  time 
             + "</p> <button class='btn btn-outline-secondary' onclick='likeMyPost()' type='button' ><img class='heart' src='images/heart.svg' alt='small heart'> Like</button> </div></div></div><br>";
     }
+    //closing toggle div container
+    str+="</div>"
     //update commentCount
     document.getElementById("commentCount").innerHTML = arr.length + " Comments";
     //update comment output
